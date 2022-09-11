@@ -3,9 +3,7 @@ module.exports = {
   settings: {
     next: {
       rootDir: [
-        "apps/docs/",
         "apps/web/",
-        "apps/xpo/",
         "apps/rnative/",
         "packages/ui/",
         "packages/config/",

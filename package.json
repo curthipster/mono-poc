@@ -17,12 +17,6 @@
       "**/react-native-*/**",
       "**/*react-navigation/native*",
       "**/*react-navigation/native*/**",
-      "**/expo",
-      "**/expo/**",
-      "**/@expo",
-      "**/@expo/**",
-      "**/expo-*",
-      "**/expo-*/**",
       "**/metro-*",
       "**/metro-*/**"
     ]
@@ -38,34 +32,6 @@
   },
   "devDependencies": {
     "prettier": "^2.5.1",
-    "turbo": "latest"
-  },
-  "turbo": {
-    "baseBranch": "origin/master",
-    "pipeline": {
-      "build": {
-        "outputs": [
-          "dist/**",
-          ".next/**",
-          "public/dist/**"
-        ],
-        "dependsOn": ["^build"]
-      },
-      "test": {
-        "dependsOn": ["^build"],
-        "outputs": [
-          "coverage/**"
-        ]
-      },
-      "lint": {
-        "outputs": []
-      },
-      "clean": {
-        "outputs": []
-      },
-      "dev": {
-        "cache": false
-      }
-    }
+    "turbo": "^1.4.6"
   }
 }

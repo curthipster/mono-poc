@@ -1,0 +1,28 @@
+{
+    "baseBranch": "origin/master",
+    "pipeline": {
+      "build": {
+        "outputs": [
+          "dist/**",
+          ".next/**",
+          "public/dist/**"
+        ],
+        "dependsOn": ["^build"]
+      },
+      "test": {
+        "dependsOn": ["^build"],
+        "outputs": [
+          "coverage/**"
+        ]
+      },
+      "lint": {
+        "outputs": []
+      },
+      "clean": {
+        "outputs": []
+      },
+      "dev": {
+        "cache": false
+      }
+    }
+  }
